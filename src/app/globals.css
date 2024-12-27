@@ -31,3 +31,96 @@ body {
     text-wrap: balance;
   }
 }
+.png-container {
+  perspective: 1000px;
+  width: 200px; /* Adjust the size of the container */
+  height: 200px; /* Adjust the size of the container */
+}
+
+.animated-png {
+  width: 100%;
+  height: 100%;
+  animation: spin 2s linear infinite; /* Apply the animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cube {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite; /* Apply the rotation animation */
+}
+
+.cubes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the column width */
+  gap: 20px; /* Adjust the gap between cubes */
+}
+
+.side {
+  position: absolute;
+  width: calc(100% - 12px); /* Reduce the width to create tighter sides */
+  height: calc(100% - 12px); /* Reduce the height to create tighter sides */
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: translateZ(90px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(90px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(90px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(90px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(90px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(90px);
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+#tech {
+  position: relative;
+}
+
+#skills-tab {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Adjust as needed */
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure the tab is above the skills content */
+}
+
+#skills-content {
+  /* Your styles for the skills content */
+}
+
+
