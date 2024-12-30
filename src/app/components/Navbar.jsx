@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
+import NavLink from "./NavLink";
 
 const navLinks = [
   {
@@ -22,6 +21,19 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  // MenuOverlay is now defined within the Navbar component
+  const MenuOverlay = ({ links }) => {
+    return (
+      <ul className="flex flex-col py-4 items-center">
+        {links.map((link, index) => (
+          <li key={index}>
+            <NavLink href={link.path} title={link.title} />
+          </li>
+        ))}
+      </ul>
+    );
+  };
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
