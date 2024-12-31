@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
   // Specify the output directory for the production build
-  distDir: 'build',
+  //distDir: 'build',
+  reactStrictMode: true,
 
   // Target serverless deployment
   //target: 'serverless',
