@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/awwards.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/greenhat100/awwards",
-    previewUrl: "awwards.kodenest.com",
+    previewUrl: "https://awwards.kodenest.com",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projectsData = [
     image: "/images/nike.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/greenhat100/nike-clone",
-    previewUrl: "nike.kodenest.com",
+    previewUrl: "https://nike.kodenest.com",
   },
   {
     id: 3,
