@@ -7,15 +7,24 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Awwards Gaming Animations",
+    description: "React Vite TailwindCSS",
+    image: "/images/awwards.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/greenhat100/awwards",
+    previewUrl: "awwards.kodenest.com",
+  },e
+  {
+    id: 2,
     title: "Nike Clone",
-    description: "REact + Vite",
+    description: "React + Vite",
     image: "/images/nike.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/greenhat100/nike-clone",
-    previewUrl: "/",
+    previewUrl: "nike.kodenest.com",
   },
   {
-    id: 2,
+    id: 3,
     title: "React Finance Software Site",
     description: "React, TailwindCSS",
     image: "/images/finance.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 3,
+    id: 4,
     title: "MERN Stack Contact Book",
     description: "NextJS, MongoDB, TailwindCSS",
     image: "/images/contact.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 5,
     title: "World History Events Map",
     description: "NextJS, Typescript, SAAS, TailwindCSS",
     image: "/images/ev.png",
@@ -42,7 +51,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 5,
+    id: 6,
     title: "AI Image Maker",
     description: "React + Vite TailwindCSS OpenAI",
     image: "/images/imai.png",
@@ -51,7 +60,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 6,
+    id: 7,
     title: "GreatMoods.com",
     description: "PHP MySQL All Hand Coded",
     image: "/images/greatmood.png",
