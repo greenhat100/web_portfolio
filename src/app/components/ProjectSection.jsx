@@ -13,7 +13,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/greenhat100/awwards",
     previewUrl: "awwards.kodenest.com",
-  },e
+  },
   {
     id: 2,
     title: "Nike Clone",
