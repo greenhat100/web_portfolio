@@ -67,8 +67,9 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "http://greatmoods.com",
-  },
+  }
 ];
+
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
