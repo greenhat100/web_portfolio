@@ -61,6 +61,15 @@ const projectsData = [
   },
   {
     id: 7,
+    title: "Covid 19 Tracker",
+    description: "ReactJS Axios API Call",
+    image: "/images/covid.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/greenhat100/covid19",
+    previewUrl: "",
+  },
+  {
+    id: 7,
     title: "GreatMoods.com",
     description: "PHP MySQL All Hand Coded",
     image: "/images/greatmood.png",
