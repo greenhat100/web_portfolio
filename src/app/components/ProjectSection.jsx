@@ -24,7 +24,7 @@ const projectsData = [
     previewUrl: "https://mcode.kodenest.com",
   },
    {
-    id: 3
+    id: 3,
     title: "Awwards Gaming Animations",
     description: "React Vite TailwindCSS",
     image: "/images/awwards.png",
